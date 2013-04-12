@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<params>
+  <brightness_thresh>50</brightness_thresh>
+  <width_thresh>10</width_thresh>
+  <height_thresh>10</height_thresh>
+  <thick_thresh>5</thick_thresh>
+  <area_ratio>1.5000000000000000e+00</area_ratio></params>
+</opencv_storage>

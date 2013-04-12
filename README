@@ -1,0 +1,50 @@
+Upright Rectangular Detection
+--------------
+
+Author: Yuncheng Li
+    yli@cs.rochester.edu
+
+    University of Rochester
+    Department of Computer Science
+    727 Computer Studies Bldg
+    Rochester, NY 14623
+    USA
+
+*********** Assumption ********
+* Only one upright black rectangle appeared in the image
+* This assumption can be removed, if necessary.
+
+*********** Parameters ********
+
+Configurable in the config.xml, the default value works with provided data
+
+brightness_thresh: definition of black (the larger this value, any pixel with brightness_thresh less than this value will be treated as black)
+width_thresh: minimum rectangle width
+height_thresh: minimum rectangle height
+thick_thresh: maximum thickness of the rectangle (thickness means the width of each edge)
+area_ratio: a value not easy to describe. valid value is 1.00 ~ 2.00. The larger this value, the higher false alarm rate is. (false alarm means there is no upright black rectangle, but this program report one)
+
+********* How to run ****
+* single run
+    ./rgmRect img-filename(full path)
+* check test.sh to see how to do multi-run
+* $ make # to build
+* add /u/yli/lib/ into LD_LIBRARY_PATH environment variable to make it run
+* The detected rectangle will be output into standard output
+
+******** LICENSING TERMS *******************
+
+This code is granted free of charge for non-commercial research and education purpose. However, commercial uses can be granted by obtaining a license from the author.
+
+1, All code shall be acknowledged in any scientific results produced using the provided code.
+
+2, The author of the code base shall be informed about the publication.
+
+3, The software or any derivative software must not be distributed without prior permission of the author.
+
+4, By using any of the codes in the code, you agree to this LICENSING terms
+
+
+******** Disclaimer of Warranty (GPL Term)***********
+
+THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
